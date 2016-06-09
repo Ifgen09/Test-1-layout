@@ -1,0 +1,77 @@
+.sidebar {
+	width: 180px;
+	padding: 10px;
+	@media (max-width: $tabletPortrait) {
+	position: static;
+	float: none;
+	width: auto;
+}
+
+}
+
+.sidebar_left {
+
+	float: left;
+	background: #bbb;
+	&:before {
+		/*content: "";*/
+		/*position: absolute;*/
+		/*height: 100%;*/
+	}
+	@media (max-width: $tabletPortrait) {
+	float: none;
+}
+
+}
+
+.sidebar_right {
+	float: right;
+	background: #aaa;
+	@media (max-width: $tabletPortrait) {
+	float: none;
+}
+
+}
+.main-content {
+	/*float: left;*/
+	/*padding: 10px;*/
+}
+
+.content > * {
+	/*outline: 1px solid #999;*/
+}
+
+.content {
+	position: relative;
+	margin-top: 10px;
+	clearfix();
+}
+
+.content-box {
+	min-height: 50px;
+	background: #eee;
+	width: 99%;
+	margin: auto;
+	padding-top: 10px;
+
+	&.content-box_left {
+		/*float: left;*/
+	}
+	&.content-box_right {
+		/*float: right;*/
+	}
+}
+
+.main-wrapper {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	right: 200px;
+	padding: 10px;
+	background: #e2e2e2;
+
+	@media (max-width: $tabletPortrait) {
+	position: static;
+}
+
+}

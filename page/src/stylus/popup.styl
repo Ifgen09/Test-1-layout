@@ -1,0 +1,39 @@
+.popup-holder {
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: $popup-holder-zindex
+}
+	.popup-title {
+		text-align: center;
+		font-weight 700;
+		font-size: 18px;
+		lone-height: 22px;
+		margin-bottom: 15px;
+	}
+	.popup-b {
+		border-radius: 5px;
+		background: #e4e4e4;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		padding: 27px 20px 23px;
+		position: relative;
+		right: 0;
+		top: 0;
+		z-index: 11;
+		max-width: 460px;
+	}
+		.popup-overlay {
+			background-color: #000;
+			opacity: 0.6;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10;
+			width: 100%;
+			cursor: default;
+		}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/global.min.css"/>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<nav class="main-nav-container">
+			<ul class="main-nav">
+				<li class="main-nav__item">
+					<a href="#" class="main-nav__item-link">
+						Menu Item 1 (with submenu)
+					</a>
+					<ul class="main-nav_submenu">
+						<li class="main-nav__item main-nav__item_submenu">
+							<a href="#">
+								Submenu 1
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Submenu 2
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-nav__item">
+					<a href="#" class="main-nav__item-link">
+						Menu Item 2
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a href="#" class="main-nav__item-link">
+						Menu Item 3 (with submenu)
+					</a>
+					<ul class="main-nav_submenu">
+						<li class="main-nav__item main-nav__item_submenu">
+							<a href="#">
+								Submenu 1
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Submenu 2
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-nav__item">
+					<a href="#" class="main-nav__item-link">
+						Menu Item 4
+					</a>
+				</li>
+			</ul>
+		</nav> <!--main-nav-container-->
+
+	</header>
+
+
+	<section class="content clearfix">
+		<div class="main-wrapper">
+
+			<div class="content-box content-box_left">
+				<form action="/">
+					<div class="inputs-b clearfix">
+						<div class="input-b clearfix">
+							<label for="input-1">
+								Subject
+							</label>
+							<input id="input-1" type="text"/>
+						</div>
+						<div class="input-b clearfix">
+							<label for="input-2">
+								From
+
+							</label>
+							<input id="input-2" type="text"/>
+						</div>
+						<div class="input-b clearfix">
+							<label for="input-3">
+								To
+							</label>
+							<input id="input-3" type="text"/>
+						</div>
+						<!--<div class="inputs-b__labels">-->
+							<!--<label for="input_1">Subject</label>-->
+							<!--<label for="input_2">From</label>-->
+							<!--<label for="input_3">To</label>-->
+						<!--</div>-->
+						<!--<div class="inputs-b__inputs">-->
+							<!--<input id="input_1" type="text"/>-->
+							<!--<input id="input_2" type="text"/>-->
+							<!--<input id="input_3" type="text"/>-->
+						<!--</div>-->
+					</div>
+					<div class="text-center">
+						<button type="button" class="btn-default js-show-popup">
+							Show popup please
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="content-box content-box_right">
+				<table class="table table_full-width">
+					<thead>
+						<tr>
+							<th width="150" class="col fixed-width">Fixed width</th>
+							<th width="150" class="col fixed-width">Fixed width</th>
+							<th class="col">Fluid</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col fixed-width">1</td>
+							<td class="col fixed-width">2</td>
+							<td class="col fixed-width">3</td>
+						</tr>
+						<tr>
+							<td class="col fixed-width">4</td>
+							<td class="col fixed-width">5</td>
+							<td class="col fixed-width">6</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		<aside class="sidebar sidebar_left">
+			Sidebar left
+			<ul class="news-list">
+				<li class="news__item">
+					<a href="#">News #1</a>
+				</li>
+				<li class="news__item">
+					<a href="#">News #3</a>
+				</li>
+				<li class="news__item">
+					<a href="#">News #3</a>
+				</li>
+			</ul>
+		</aside>
+
+		<aside class="sidebar sidebar_right">
+			Sidebar right
+		</aside>
+	</section>
+</div>
+
+
+<footer class="footer">
+	<div class="footer__center-text">
+		&copy;
+	</div>
+	<div class="footer__center-text">
+		Your advertisement could be here
+	</div>
+</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

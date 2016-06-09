@@ -1,0 +1,62 @@
+.main-nav-container {
+	max-width: 960px;
+	margin: auto;
+	.main-nav {
+		text-align: justify;
+		@media(max-width: 768px) {
+			text-align: left;
+		}
+
+
+		.main-nav__item {
+			display: inline-block;
+			position: relative;
+			@media(max-width: $tabletPortrait) {
+				display: block;
+				margin: 10px;
+				text-align center;
+			}
+		}
+		.main-nav__item-link {
+			&:hover {
+				+ .main-nav_submenu {
+					display: block;
+				}
+			}
+		}
+		&:before{
+			content: '';
+			display: block;
+			width: 100%;
+		}
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	.main-nav_submenu {
+		display: none;
+		left: 0;
+		position: absolute;
+		z-index: $main-nav-submenu-zindex;
+		top: 100%;
+
+		@media(max-width: $tabletPortrait) {
+			left: 0;
+			right: 0;
+		}
+
+		&:hover {
+			display: block;
+		}
+	}
+	.main-nav__item_submenu {
+		padding: 10px 0;
+		@media(max-width: $tabletPortrait) {
+
+		}
+	}
+
+
+}

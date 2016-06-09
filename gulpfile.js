@@ -27,7 +27,7 @@ var path = {
 	src: {
 		html: 'page/src/**/*.html',
 		js: 'page/src**/js/*.js',
-		style: 'page/src/stylus/global.styl'
+		style: 'page/src/stylus/main.styl'
 	},
 	watch: {
 		html: 'page/src/**/*.html',

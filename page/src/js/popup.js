@@ -6,7 +6,7 @@ var Popup = (function() {
 
 	function show(popupID, contentString) {
 		var HTML = '' +
-			'<div id="'+popupID+'" class="popup-holder">' +
+			'<div id="'+popupID+'" class="popup-holder" style="display: none;">' +
 			'<div id="popup-'+popupID+'" class="popup-b">' +
 			'<div class="popup-content">' +
 				contentString +
@@ -17,6 +17,7 @@ var Popup = (function() {
 
 
 		$('body').addClass('popup-open').append(HTML);
+		$('#'+popupID).fadeIn(700);
 
 
 		setPopupHeight('popup-'+popupID);

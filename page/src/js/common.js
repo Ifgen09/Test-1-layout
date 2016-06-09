@@ -17,15 +17,17 @@ $(function() {
 			'<h2 class="popup-title">Look at form again</h2>' +
 			'<form action="/">' +
 			'<div class="inputs-b clearfix">' +
-				'<div class="inputs-b__labels">' +
-					'<label for="input_4">Subject</label>' +
-					'<label for="input_5">From</label>' +
-					'<label for="input_6">To</label>' +
+				'<div class="input-b clearfix">' +
+					'<label for="input-4">Subject</label>' +
+					'<input id="input-4" type="text"/>' +
 				'</div>' +
-				'<div class="inputs-b__inputs">' +
-					'<input id="input_4" type="text"/>' +
-					'<input id="input_5" type="text"/>' +
-					'<input id="input_6" type="text"/>' +
+				'<div class="input-b clearfix">' +
+					'<label for="input-5">From</label>' +
+					'<input id="input-5" type="text"/>' +
+				'</div>' +
+				'<div class="input-b clearfix">' +
+					'<label for="input-6">To</label>' +
+					'<input id="input-6" type="text"/>' +
 				'</div>' +
 			'</div>' +
 			'</form>';

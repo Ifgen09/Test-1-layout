@@ -63,12 +63,14 @@ gulp.task('scripts:build', function() {
 gulp.task('style:build', function() {
 	'use strict';
 	gulp.src(path.src.style)
+		.pipe(sourcemaps.init())
 		.pipe(stylus())
 		.on('error',notify.onError())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifyCss())
 
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(browserSync.reload({
 			stream: true

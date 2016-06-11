@@ -17,7 +17,7 @@ var Popup = (function() {
 
 
 		$('body').addClass('popup-open').append(HTML);
-		$('#'+popupID).fadeIn(700);
+		$('#'+popupID).fadeIn(700).find('.popup-b').addClass('popup-b_visible');
 
 
 		setPopupHeight('popup-'+popupID);
@@ -63,13 +63,15 @@ var Popup = (function() {
 	}
 
 	function hide($object) {
+		$object.find('.popup-b').removeClass('popup-b_visible');
 		$object.fadeOut(700, function() {
 			$(this).remove();
 		});
 	}
 
 
-	$(document).on('click', '.popup-overlay', function() {
+	$(document).on('click', '.popup-overlay', function(e) {
+		e.preventDefault();
 		hide($(this).parents('.popup-holder'));
 		$('body').removeClass('popup-open');
 	});

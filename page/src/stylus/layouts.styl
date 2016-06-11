@@ -1,34 +1,45 @@
 .sidebar {
 	width: 180px;
 	padding: 10px;
+	border: 1px solid #ccc;
 	@media (max-width: $tabletPortrait) {
 		position: static;
-		float: none;
-		width: auto;
+		/*float: none;*/
+		/*width: 50%;*/
+
 	}
+
 
 }
 
 .sidebar_left {
 
 	float: left;
-	background: #bbb;
-	&:before {
-		/*content: "";*/
-		/*position: absolute;*/
-		/*height: 100%;*/
-	}
+	margin-left: - 100%;
+
 	@media (max-width: $tabletPortrait) {
-		float: none;
+		/*float: none;*/
+		margin: auto;
 	}
+	@media(max-width: $mobilePortrait) {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+
 
 }
 
 .sidebar_right {
 	float: right;
-	background: #aaa;
+	margin-left: -202px;
 	@media (max-width: $tabletPortrait) {
+		margin: auto;
+	}
+	@media(max-width: $mobilePortrait) {
 		float: none;
+		width: auto;
+		text-align: center;
 	}
 
 }
@@ -41,6 +52,13 @@
 .content {
 	position: relative;
 	margin-top: 10px;
+	max-width: $content-width;
+	padding: 0 10px;
+	margin: 10px auto 0;
+	/*background: #eee;*/
+	@media (max-width: $tabletPortrait) {
+		padding: 0;
+	}
 }
 
 .content-box {
@@ -58,17 +76,27 @@
 	}
 }
 
-.main-wrapper {
-	position: absolute;
-	top: 0;
-	left: 200px;
-	right: 200px;
+.content-b-wrapper {
+	float: left;
+	width: 100%;
+
+	@media (max-width: $tabletPortrait) {
+		float: none;
+	}
+}
+.content-b {
+	/*position: absolute;*/
+	margin: 0 210px;
+	/*top: 0;*/
+	/*left: 210px;*/
+	/*right: 210px;*/
 	padding: 10px;
 	background: #e2e2e2;
 
 	@media (max-width: $tabletPortrait) {
 		position: static;
 		padding: 0;
+		margin: auto;
 	}
 
 }

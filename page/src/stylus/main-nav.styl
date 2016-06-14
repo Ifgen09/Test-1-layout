@@ -11,17 +11,19 @@
 		.main-nav__item {
 			display: inline-block;
 			position: relative;
+
+			@media(min-width: $tabletPortrait) {
+				&:hover {
+					.main-nav_submenu {
+						display: block;
+					}
+				}
+			}
+
 			@media(max-width: $tabletPortrait) {
 				display: block;
 				margin: 10px;
 				text-align center;
-			}
-		}
-		.main-nav__item-link {
-			&:hover {
-				+ .main-nav_submenu {
-					display: block;
-				}
 			}
 		}
 		&:before{
@@ -47,9 +49,9 @@
 			right: 0;
 		}
 
-		&:hover {
-			display: block;
-		}
+		/*&:hover {*/
+			/*display: block;*/
+		/*}*/
 	}
 	.main-nav__item_submenu {
 		padding: 10px 0;

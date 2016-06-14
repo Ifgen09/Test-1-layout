@@ -66,6 +66,7 @@ gulp.task('style:build', function() {
 		.pipe(sourcemaps.init())
 		.pipe(stylus())
 		.on('error',notify.onError())
+		.pipe(autoprefixer('last 15 versions'))
 		.pipe(gulp.dest(path.build.css))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifyCss())

@@ -32,7 +32,6 @@ var Popup = (function() {
 	}
 
 	function setPopupHeight(popupID) {
-		console.log(popupID);
 		var $popup = $('#'+popupID),
 			padding = parseInt($popup.css('padding-top'), 10) + parseInt($popup.css('padding-bottom'), 10);
 

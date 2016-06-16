@@ -1,4 +1,4 @@
-var Popup = (function() {
+;var Popup = (function() {
 	'use strict';
 
 

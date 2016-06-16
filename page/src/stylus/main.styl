@@ -24,6 +24,11 @@ h3 {
 .wrapper {
 	min-height: 100%;
 	margin-bottom: - $footer-border-and-outer-height;
+	&:after {
+		content: "";
+		display: block;
+		height: $footer-border-and-outer-height + 10; //sticky footer height + margin under it
+	}
 }
 .text-center {
 	text-align: center;
